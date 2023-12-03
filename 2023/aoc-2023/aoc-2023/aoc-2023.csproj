@@ -3,21 +3,26 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net7.0</TargetFramework>
-        <RootNamespace>aoc_2023</RootNamespace>
+        <RootNamespace>day-01</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <AssemblyName>day-01</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
-      <None Update="day-01\input.txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="day-01\example.txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="day-01\example2.txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
+      <None Remove="day-02\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="day-02\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="day-02\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="day-01" />
     </ItemGroup>
 
 </Project>
