@@ -259,6 +259,9 @@ char[,] TransformMap()
 // start from the sides of the map
 // "color" all empty spaces that are reachable with "O"
 // finally, the number of the "." characters that remain are the desired answer
+// note to self: check pick's formula and the shoelace formula
+// https://en.wikipedia.org/wiki/Pick%27s_theorem
+// https://en.wikipedia.org/wiki/Shoelace_formula
 void Part2(char[,] map)
 {
     var enqueueHistory = new HashSet<(int, int)>();
